@@ -95,7 +95,7 @@
       </svg>
 
       <div class="page">
-        <header>
+        <header class="zoom-parallax-header">
           <div class="parallax">
             <div class="bg">
               <svg viewBox="0 0 480 240"><use xlink:href="#bg" /></svg>
@@ -105,12 +105,7 @@
 
         <main class="zoom-parallax-main">
           <h1>New York</h1>
-          <a
-            class="no-iframe"
-            href="https://codepen.io/jakob-e/debug/ELqeRM/"
-            target="_blank"
-            >Open in debug mode</a
-          >
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             quisquam odio consequuntur aliquam nobis eius voluptatem. Nam eum
@@ -172,7 +167,7 @@
         </main>
       </div>
     </div>
-    <!-- <div class="hide-parallax">
+    <div class="hide-parallax">
       <section
         class="image"
         style="
@@ -462,7 +457,7 @@
       <div class="footer">
         <h3>Pretty cool right?</h3>
       </div>
-    </div> -->
+    </div>
 
     <!-- for Zoom image -->
     <script>
@@ -491,17 +486,6 @@
         },
         passiveSupported ? { passive: true } : false
       );
-
-      //  link to open without iframe
-      const inIframe = () => {
-        try {
-          return window.self !== window.top;
-        } catch (e) {
-          return true;
-        }
-      };
-      if (inIframe())
-        document.querySelector(".no-iframe").style.display = "block";
     </script>
     <script src="script.js"></script>
   </body>
